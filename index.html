@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather</title>
+</head>
+<body>
+    <div class="search">
+        <div>Weather</div>
+        <button id="curr-location"><img src="./icons/location.png">Your Location</button>
+        <div id="search-auto">
+            <input type="search" placeholder="Search" class="search-box" id="search-box-pc" autocomplete="off">
+        </div>
+        
+    </div>
+    <div class="app day-clear">
+        <div id="search-auto-mobile">
+            <input type="search" placeholder="Search" class="search-box" id="search-box-mobile" autocomplete="off">
+        </div>
+        <div class="current-weather">
+            <div id="city"></div>
+            <img src="" id="icon">
+            <div id="main-desc"></div>
+            <div id="curr-temp"></div>
+        </div>
+        <section>
+        <div class="other-info">
+            <span>
+                <p id="description"></p>
+                Description
+            </span>
+            <span>
+                <p id="feels-like"></p>
+                Feels like
+            </span>
+            <span>
+                <p id="sunrise"></p>
+                Sunrise
+            </span>
+            <span>
+                <p id="sunset"></p>
+                Sunset
+            </span>
+            <span>
+                <p id="max-temp"></p>
+                Max Temp
+            </span>
+            <span>
+                <p id="min-temp"></p>
+                Min Temp
+            </span>
+        </div>
+        <div class="circular-stats">
+            <svg>
+                <circle id="humidity" class="stats-layout" r="90px" cx="100" cy="100"></circle>
+                <circle id="humidity-stat" r="90px" cx="100" cy="100"></circle>
+                <circle class="stats-layout" r="90px" cx="300" cy="100"></circle>
+                <circle id="uvi-stat" r="90px" cx="300" cy="100"></circle>
+            </svg>
+            <span id="humidity-text">Humidity</span>
+            <span id="uvi-text">UVI</span>
+            <span id="humidity-data"></span>
+            <span id="uvi-data"></span>
+        </div>
+        <div class="alert">
+            <span>Alert</span>
+            <p id="alert-data"></p>
+        </div>
+        </section>
+    </div>
+   
+</body>
+<script src="spott.js"></script>
+<script src="api_key.js"></script>
+<script src="script.js"></script>
+</html>
